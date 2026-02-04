@@ -20,16 +20,10 @@
             <h2>Log in</h2>
             <form action="/todo.html" method="get">
               <label for="email">Email address</label><br>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <label for="email">Password</label><br>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button type="button" class="btn btn-primary">Log in</button>
+              <input type="text" class="textbox" id="email" name="email" placeholder="Email address"><br>
+              <label for="pass">Password</label><br>
+              <input type="text" class="textbox" id="pass" name="pass" placeholder="Password"><br> 
+              <button type="button" class="btn btn-primary btn-adjust">Log in</button>
             </form>
           </div>
         </div>
@@ -45,12 +39,12 @@
             <h2>Sign up</h2>
             <form action="/todo.html" method="get">
               <label for="email">Email address</label><br>
-              <input type="text" class="wider-text" id="email" name="email" placeholder="Email address"><br>
-              <label for="email">Password</label><br>
-              <input type="text" class="wider-text" id="pass" name="pass" placeholder="Password"><br>
-              <label for="email">Invite Code</label><br>
-              <input type="text" class="wider-text" id="invite" name="invite" placeholder="Invite Code"><br>
-              <button type="button" class="btn btn-primary">Sign up</button>
+              <input type="text" class="textbox" id="email" name="email" placeholder="Email address"><br>
+              <label for="pass">Password</label><br>
+              <input type="text" class="textbox" id="pass" name="pass" placeholder="Password"><br>
+              <label for="invite">Invite Code</label><br>
+              <input type="text" class="textbox" id="invite" name="invite" placeholder="Invite Code"><br>
+              <button type="button" class="btn btn-primary .btn-adjust">Sign up</button>
             </form>
           </div>
         </div>
