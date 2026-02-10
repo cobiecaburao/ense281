@@ -1,3 +1,7 @@
-#Directories to ignore
+#Directories to be ignored
 
 Lost-and-Found/
+
+#Files to be ignored
+
+lab3.zip
