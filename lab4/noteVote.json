@@ -1,25 +1,28 @@
 [
     {
+        "noteID": "0",
+        "username": "meowth",
+        "password": "abc123",
+        "note": "that's right",
+        "upvotes": ["james", "jesse"],
+        "downvotes": []
+    },
+
+    {
         "noteID": "1",
-        "op": "bob",
-        "note": "bob was here",
-        "upvotes": ["tim", "mary", "joe"],
-        "downvotes": ["terry", "larry", "barry"]
+        "username": "james",
+        "password": "123abc",
+        "note": "to unite all peoples within our nation",
+        "upvotes": ["jesse"],
+        "downvotes": ["meowth"]
     },
 
     {
         "noteID": "2",
-        "op": "james",
-        "note": "james was here",
-        "upvotes": ["bob", "mary", "joe"],
-        "downvotes": ["terry"]
-    },
-
-    {
-        "noteID": "3",
-        "op": "jesse",
-        "note": "jesse was here",
-        "upvotes": ["james", "mary", "jolene"],
-        "downvotes": ["terry", "bob", "tim"]
+        "username": "jesse",
+        "password": "a1b2c3",
+        "note": "to protect the world from devastation",
+        "upvotes": ["james"],
+        "downvotes": ["meowth"]
     }
 ]

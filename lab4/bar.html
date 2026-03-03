@@ -24,6 +24,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
         <script>
+            // sticky note color rotation array
             const colors = ['#ff7eb9', '#ff65a3', '#7afcff', '#feff9c', '#fff740'];
             let colorIndex = 0;
 
@@ -31,6 +32,7 @@
                 const title = document.getElementById('title');
                 const content = document.getElementById('content');
 
+                // makes sure inputs are not empty
                 if(title.value === "" || content.value === "") {
                     alert("incomplete note!");
                     return;
@@ -50,17 +52,25 @@
                     </button>
                 </div>`;
                 
+                // increment color index to move to next color in array
+                // resets when colorIndex + 1 = colors.length, since (colorIndex + 1) % colors.length = 0
                 colorIndex = (colorIndex + 1) % colors.length;
 
-                // add note to board
+                // add newNote as a child of id board
                 document.getElementById('board').appendChild(newNote);
                 
-                // empty inputs
+                // empty input objects
                 title.value = "";
                 content.value = "";
             }
 
             function burnNote(button) {
+                // object is parent parent of button
+                // <div class="card">  <-----toBurn object
+                //     <div class="card-body">
+                //         <button></button>
+                //     </div>
+                // </div>
                 const toBurn = button.parentElement.parentElement;
                 toBurn.remove();
             }
