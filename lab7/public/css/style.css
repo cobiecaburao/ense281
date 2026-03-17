@@ -1,0 +1,68 @@
+/*
+Cobie Caburao
+200436566
+ENSE 281
+Lab 7
+*/
+.my-heading {
+    background-color: #97b498;
+}
+
+.error-heading {
+    background-color: #ba6b6c;
+}
+
+.accordion-item {
+    margin: auto;
+    text-align : center;
+    width: 300px;
+    border-radius: 5;
+    box-shadow: 5px 5px 5px 5px rgb(197, 197, 197);
+}
+
+.container {
+    margin: auto;
+    margin-top: 50px;
+    text-align : center;
+    border-radius: 5;
+    width: 500px;
+    box-shadow: 5px 5px 5px 5px rgb(197, 197, 197);
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.input-group-text {
+    margin-top: 10px;
+    color: darkslategray
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+.textbox {
+    border-radius: 5;
+}
+
+.btn-adjust {
+    vertical-align: middle;
+    margin-top: 10px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
+.btn-outline-secondary, .btn-success, .btn-danger {
+    margin-top: 10px;
+}
+
+.bi-arrow-up, .bi-arrow-down {
+    margin-bottom: 3px;
+}
+
+.bi-gear-fill {
+    margin-right: 8px;
+}
+

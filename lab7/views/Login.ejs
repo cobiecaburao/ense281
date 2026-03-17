@@ -1,0 +1,48 @@
+<%- include("layouts/header") -%>
+
+<h1>Vote-Note</h1><br>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Log In
+        </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        <h2>Log in</h2>
+        <form action="/login" method="post">
+            <label for="username">Username</label><br>
+            <input type="text" class="textbox" id="username" name="username" placeholder="Username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" class="textbox" id="password" name="password" placeholder="Password"><br>
+            <button type="sumit" class="btn btn-primary btn-adjust">Log in</button>
+        </form>
+        </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Register
+        </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        <h2>Sign up</h2>
+        <form action="/register" method="post">
+            <label for="username">Username</label><br>
+            <input type="text" class="textbox" id="username" name="username" placeholder="Username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" class="textbox" id="password" name="password" placeholder="Password"><br>
+            <label for="invite">Invite Code</label><br>
+            <input type="text" class="textbox" id="invite" name="invite" placeholder="Invite Code"><br>
+            <button type="submit" class="btn btn-primary .btn-adjust">Sign up</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+<%- include("layouts/scripts") -%>

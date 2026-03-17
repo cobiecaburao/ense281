@@ -1,0 +1,31 @@
+<%- include("layouts/header") -%>
+
+<%- include('partials/logout.ejs') %>
+
+<div class="container">
+    <% notes.forEach(note => { %>
+        <% const isAuthor = note.creator === username; %>
+        <% const hasUpvoted = note.upvotes.includes(username); %>
+        <% const hasDownvoted = note.downvotes.includes(username); %>
+
+        <% if (isAuthor && note.upvotes.length === 0 && note.downvotes.length === 0) { %>
+            <%- include('partials/note-author-novotes.ejs', { note }) %>
+
+        <% } else if (isAuthor) { %>
+            <%- include('partials/note-author-votes.ejs', { note }) %>
+
+        <% } else if (hasUpvoted) { %>
+            <%- include('partials/note-upvoted.ejs', { note }) %>
+
+        <% } else if (hasDownvoted) { %>
+            <%- include('partials/note-downvoted.ejs', { note }) %>
+
+        <% } else { %>
+            <%- include('partials/note-default.ejs', { note }) %>
+        <% } %>
+    <% }) %>
+
+    <%- include('partials/new-note.ejs') %>
+</div>
+
+<%- include("layouts/scripts") -%>
